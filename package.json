@@ -1,0 +1,65 @@
+{
+  "name": "Mens-Sana",
+  "version": "0.0.1",
+  "description": "Mens-Sana",
+  "main": "index.html",
+  "devDependencies": {
+    "uglify-js": "^2.4.12",
+    "tape": "^2.10.2",
+    "gulp": "^3.5.5",
+    "gulp-browserify": "^0.5.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-jade": "^0.4.2",
+    "testling": "^1.6.1"
+  },
+  "testling": {
+    "files": "test/**.js",
+    "browsers": {
+      "ie": [
+        9,
+        10
+      ],
+      "firefox": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "chrome": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "safari": [
+        5.1,
+        6
+      ],
+      "opera": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "iphone": [
+        6
+      ],
+      "ipad": [
+        6
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dizwix/MensSana.git"
+  },
+  "author": "dizwix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dizwix/MensSana/issues"
+  },
+  "homepage": "https://github.com/dizwix/MensSana"
+}
