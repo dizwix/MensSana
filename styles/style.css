@@ -21,10 +21,10 @@ h1{
 
 #header{
   font-size: 1em;
-  height: 3em;
+  height: 39px;
   width: 100%;
   display: block;
-  margin-bottom: 30px;
+  padding: 0;
 }
 
 .separ{
@@ -36,21 +36,26 @@ h1{
 }
 
 #header img{
-  margin: 5px;
+  margin: 0;
   display: inline-block;
 }
 
-#header ul{
-  display: inline;
+#header nav{
+  display: inline-block;
   margin: 0;
-  height: 40px;
-  padding: 0;
+  vertical-align: top;
+  margin-top: 9px;
 }
 
-#header li{
+#nav2{
+  position: absolute;
+  right: 0%;
+}
+
+#header a{
   text-decoration: none;
   display: inline-block;
-  margin: 0 .6em; 
+  margin: 0 .6em;
 }
 
 #background{
@@ -63,7 +68,6 @@ h1{
 
 #content{
   display: block;
-  margin-top: 20px; 
 } 
 
 h2{
