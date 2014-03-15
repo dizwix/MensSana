@@ -12,10 +12,10 @@ a{
 
 h1{
   font-size: 2.5em;
-  font-style: italic;
   display: block;
   width: 12.5em;
   margin: auto;
+  padding: .8em;
   text-align: center;
 }
 
@@ -62,13 +62,18 @@ h1{
   width: 100%;
   height: 300px;
   margin: 0;
-  background-image: url(http://fakeimg.pl/1200x300/);
+  background-image: url(http://i.imgur.com/AUkqrpY.png);
   background-attachment: fixed;
 }
 
 #content{
   display: block;
 } 
+
+#content-title{
+  color: white;
+  background-color: #002060;
+}
 
 h2{
   text-align: center;
@@ -87,15 +92,31 @@ h2{
 }
 
 .content--links{
+  color: white;
   display: inline-block;
   vertical-align: top;
   width: 13.75em;
   height: 13.75em;
-  background-color: rgba(45, 62, 82, .75);
+  background-color: #002060;
   border-radius: .5em;
   text-align: center;
+  padding: 0 .5em;
+  vertical-align: bottom;
 }
 
 .content--links img{
   margin: .4em;
+}
+
+#textcols{
+  display: table;
+  table-layout: fixed;
+  width: 90%;
+  margin: 2em auto;
+}
+
+.textcol{
+  display: table-cell;
+  width: 15em;
+  margin: 2em;
 }
