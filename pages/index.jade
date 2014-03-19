@@ -1,11 +1,6 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    title Mens-Sana
-    link(rel='stylesheet' href='./styles/style.css')
-  body
-    include ./partials/header
-    include ./partials/contenu
-    include ./partials/footer
-    script(src='scripts/index.js')
+extends ./layouts/main.jade
+append title
+  title
+    |Mens-Sana - Accueil
+append contenu
+  include ./partials/contenu.jade
