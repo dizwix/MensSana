@@ -1,0 +1,23 @@
+GRID_COLS = 12
+GRID_COL_WIDTH = 3.75
+GRID_COL_GUTTER = .625
+
+.Grid
+  width: 60em
+  margin: 0 auto
+
+.Grid-col
+  margin: 0 unit(GRID_COL_GUTTER, em)
+  display: inline-block
+  vertical-align: top
+
+for index in (1 ... GRID_COLS + 1)
+  .Grid-col--{index}
+    width: unit(GRID_COL_WIDTH * index + 2 * (index - 1) * GRID_COL_GUTTER, em)
+
+html
+  font-size: .9em
+
+@media (min-width:52.5em)
+  html
+    font-size: 1em
