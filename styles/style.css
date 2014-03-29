@@ -70,7 +70,7 @@ h1{
   display: block;
 } 
 
-.content-title{
+.content--title{
   color: white;
   background-color: #002060;
 }
@@ -108,11 +108,33 @@ h2{
   margin: .4em;
 }
 
-h3{
-  margin: 1em 1em;
+.content--mnemosyne{
+  background-color: #060;
+  color: white;
 }
 
-.textcols{
+.content--aristote{
+  background-color: red;
+  color: white;
+}
+
+.content--demosthene{
+  background-color: orange;
+  color: white;
+}
+
+.mnemopic, .arispic, .demospic{
+  display: inline-block;
+  margin: 1em;
+}
+
+.mnemotext, .aristext, .demostext{
+  display: inline-block;
+  width: 80%;
+}
+
+
+.content--textcols{
   width: 90%;
   margin: auto;
 }
@@ -122,4 +144,15 @@ h3{
   width: 45%;
   display: inline-block;
   vertical-align: top;
+}
+
+.footer{
+  text-align: center;
+  background-color: #002060;
+  color: white;
+  padding: .5em;
+}
+
+.footer a{
+  color: white;
 }
