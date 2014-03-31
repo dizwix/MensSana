@@ -1,0 +1,43 @@
+{
+  "i18n" : {
+    "learnMore" : "En savoir plus",
+    "conference" : "Conférence",
+    "by" : "par",
+    "the" : "le",
+    "at" : "à",
+    "confirm" : "Confirmer votre présence auprès de Karine au : 01 71 54 64 85"
+  },
+  "homepage" : {
+    "tiles" : [
+      {
+        "title" : "… en stimulant vos capacités d'apprendre",
+        "text" : "Que vous soyez étudiant, en activité ou passionné pour une discipline qui sollicite la mémoire"
+      },
+      {
+        "title" : "… en préservant votre capital mémoire",
+        "text" : "et assurez votre efficience pour l'avenir"
+      },
+      {
+        "title" : "… en développant votre créativité",
+        "text" : "puisque vos capacités créatives dépendent de votre mémoire"
+      }
+    ],
+    "showcase" : "Entretenez <span class=\"Ampersand\">&amp;</span>développez votre mémoire …"
+  },
+  "events" : [
+    {
+      "title" : "Les clés d’activation de la mémoire",
+      "speaker" : "François Bénétin",
+      "date" : "Mardi 25 Février 2014",
+      "time" : "17h00",
+      "location" : [
+        "Institut Mens-Sana",
+        "112 rue Brancion",
+        "75015 Paris",
+        "Metro Porte de Vanves - Bus 95 station Brancion"
+      ],
+      "price" : "10€",
+      "confirm" : true
+    }
+  ]
+}

@@ -1,17 +1,11 @@
 extends ../layouts/main.jade
 
 append showcase
-  .Showcase
-    .Grid
-      .Grid-col.Grid-col--12
-        h1.Showcase-title
-          | Entretenez
-          span.Ampersand &
-          | développez votre mémoire …
+  +Showcase(homepage.showcase)
 
 append content
   .Grid
-    .Grid-col.Grid-col--8
+    .Grid-col.Grid-col--8.Introduction
       h2.Introduction-title
         | Le concept
         span Mens Sana
@@ -26,7 +20,7 @@ append content
             Ceci requiert de disposer en permanence de la pleine mesure de notre
             potentiel cérébral, de le développer, de l’entretenir.
         li.Introduction-item
-          p.
+          p.Introduction-text.
             Si la culture du corps a pris tant d’importance dans nos sociétés,
             celle des capacités intellectuelles reste ignorée, oubliée.
             Or, les ressources de ces capacités sont telles que l’on
@@ -125,30 +119,12 @@ append content
             ses séminaires, est de dispenser l’apprentissage d’une méthode
             qui, en s’adaptant à vos besoins propres, deviendra votre
             méthode personnelle utilisable pour toujours à votre gré.
+    .Grid-col.Grid-col--4
+      .Events
+        h2.Events-title
+          | Prochains
+          span évenements
+        +EventSummary(events.slice(0, 2))
 
 append tiles
-  .Tiles
-    .Grid
-      .Tile.Grid-col.Grid-col--4
-        h3.Tile-title
-          | … en stimulant vos capacités d'apprendre
-        p.Tile-text
-          | Que vous soyez étudiant, en activité
-          | ou passionné pour une discipline qui sollicite
-          | la mémoire
-        a.Button(href="#")
-          | En savoir plus
-      .Tile.Grid-col.Grid-col--4
-        h3.Tile-title
-          | … en préservant votre capital mémoire
-        p.Tile-text
-          | et assurez votre efficience pour l'avenir
-        a.Button(href="#")
-          | En savoir plus
-      .Tile.Grid-col.Grid-col--4
-        h3.Tile-title
-          | … en développant votre créativité
-        p.Tile-text
-          | puisque vos capacités créatives dépendent de votre mémoire
-        a.Button(href="#")
-          | En savoir plus
+  +tiles(homepage.tiles)

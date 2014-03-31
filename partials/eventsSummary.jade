@@ -1,0 +1,17 @@
+mixin EventSummary(list)
+  .EventSummary
+    -each item in list
+      .EventSummary-item
+        h3.EventSummary-title
+          | #{item.title}
+        .EventSummary-speaker
+          | #{i18n.by}
+          strong #{item.speaker}
+        .EventSummary-time
+          | #{i18n.the}
+          strong #{item.date}
+          | #{i18n.at}
+          strong #{item.time}
+        .EventSummary-button
+          a.Button(href="#")
+            | #{i18n.learnMore}

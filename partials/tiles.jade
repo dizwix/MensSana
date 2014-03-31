@@ -1,0 +1,11 @@
+mixin tiles(list)
+  .Tiles
+    .Grid
+      -each item in list
+        .Tile.Grid-col.Grid-col--4
+          h3.Tile-title
+            | #{item.title}
+          p.Tile-text
+            | #{item.text}
+          a.Button(href="#")
+            | #{i18n.learnMore}

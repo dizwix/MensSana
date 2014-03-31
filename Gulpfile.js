@@ -6,6 +6,8 @@ var gulp = require('gulp')
   , plumber = require('gulp-plumber')
   , stylus = require('gulp-stylus')
   , autoprefixer = require('gulp-autoprefixer')
+  , fs = require('fs')
+  , jadeLocals = JSON.parse(fs.readFileSync("./data/index.json"))
 
 gulp.task('scripts', function(){
   return gulp.src('scripts/index.js')
@@ -35,7 +37,9 @@ gulp.task('images', function(){
 gulp.task('pages', function(){
   return gulp.src('pages/**.jade')
     .pipe(plumber())
-    .pipe(jade())
+    .pipe(jade({
+      locals : jadeLocals
+    }))
     .pipe(gulp.dest('dist/'))
 })
 
@@ -43,6 +47,9 @@ gulp.task('watch', function(){
   gulp.watch('images/**', ['images'])
   gulp.watch('scripts/**', ['scripts'])
   gulp.watch('styles/**', ['styles'])
+  gulp.watch('data/**', {}, function(){
+    jadeLocals = JSON.parse(fs.readFileSync("./data/index.json"))
+  })
   gulp.watch(['pages/**', 'partials/**', 'layouts/**'], ['pages'])
 })
 
